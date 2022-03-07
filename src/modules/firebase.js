@@ -1,4 +1,4 @@
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from 'firebase/compat/app';
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {

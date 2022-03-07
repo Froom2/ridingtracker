@@ -1,9 +1,7 @@
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
-import firebase from 'firebase/compat/app';
 import { FirebaseUiConfig } from '../modules/firebaseuiConfig';
 
-
-export const SignInPrompt = () => {
+export const SignInPrompt = ({ firebase }) => {
   <div>
     <h1>Riding-Tracker</h1>
     <p>Please sign-in:</p>
