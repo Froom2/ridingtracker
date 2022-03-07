@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
 import { Header } from './Header';
 import { SignInPrompt } from './SignInPrompt';
 
