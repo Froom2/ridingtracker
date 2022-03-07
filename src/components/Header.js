@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from '../assets/logo.svg';
 
 export const Header = () => {
   return <header className="App-header">
