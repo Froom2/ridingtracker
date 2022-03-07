@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import '../modules/firebase' // initialise firebase app
 import 'firebase/compat/auth';
 import firebase from 'firebase/compat/app';
 import { Header } from './Header';

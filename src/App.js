@@ -1,4 +1,5 @@
 import './App.css';
+import './modules/firebase' // initialise firebase app
 import { SignInGuard } from './components/SignInGuard';
 
 function App() {
