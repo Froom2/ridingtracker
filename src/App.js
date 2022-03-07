@@ -1,11 +1,10 @@
 import './App.css';
-import './modules/firebase' // initialise firebase app
-import { Header } from './components/Header';
+import { SignInGuard } from './components/SignInGuard';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <SignInGuard />
     </div>
   );
 }
