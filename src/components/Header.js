@@ -1,10 +1,10 @@
 import logo from '../assets/logo.svg';
 
-export const Header = () => {
+export const Header = ({userName}) => {
   return <header className="App-header">
     <img src={logo} className="App-logo" alt="logo" />
     <p>
-      Edit <code>src/App.js</code> and save to reload.
+      Hello {userName}.
     </p>
     <a
       className="App-link"

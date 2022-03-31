@@ -19,11 +19,13 @@ firebase.initializeApp(firebaseConfig);
 
 export const SignInGuard = () => {
   const [isSignedIn, setIsSignedIn] = useState(false);
+  const [user, setUser] = useState(null);
 
   // Listen to the Firebase Auth state and set the local state.
   useEffect(() => {
-    const unregisterAuthObserver = firebase.auth().onAuthStateChanged(user => {
-      setIsSignedIn(!!user);
+    const unregisterAuthObserver = firebase.auth().onAuthStateChanged(fbUser => {
+      setIsSignedIn(!!fbUser);
+      setUser(fbUser);
     });
     return () => unregisterAuthObserver(); // Make sure we un-register Firebase observers when the component unmounts.
   }, []);
@@ -32,5 +34,5 @@ export const SignInGuard = () => {
     return <SignInPrompt firebase={firebase} />;
   }
 
-  return <Header />;
+  return <Header userName={user.displayName} />;
 }
